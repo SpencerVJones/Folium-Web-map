@@ -1,15 +1,38 @@
 # Interactive Map with Folium
-This Python script creates an interactive map using Folium, a powerful library for visualizing geospatial data. The map marks both places where I have lived and places I have visited, distinguishing them with different colored markers.
+This Python script utilizes the Folium library to create an interactive map visualizing places where the author has lived and visited. It generates an HTML file with embedded JavaScript code to render the map.
 
 ## Features:
-- **Custom Markers:** Places I have lived are marked with blue icons, while places I have visited are marked with green icons.
-- **Popup Information:** Clicking on each marker reveals additional information about the location, such as city and state.
-- **Interactive:** The map allows users to zoom in/out and navigate across different areas seamlessly.
+- **Base Map:** Utilizes the CartoDB Positron base map for visualization.
+- **Marker Clusters:** Groups multiple markers at the same location to prevent overlap and improve map readability.
+- **Marker Colors:** Distinguishes between places the author has lived (blue) and visited (green).
+- **Pop-up Information:** Provides location-specific information when clicking on markers, such as city names.
 
-## Instructions:
-- **Installation:** Ensure you have Folium installed. If not, you can install it via pip by running pip3 install folium in your terminal.
-- **Execution:** Simply run the provided Python script to generate the interactive map.
-- **Exploration:** After the script execution, open the generated HTML file (map1.html) to interact with the map in your web browser.
-<br>
-<br>
-Feel free to customize the script to add more locations or personalize the map according to your preferences!
+## Installation:
+To install Folium, use pip in the terminal:
+```
+pip3 install folium
+```
+
+## Usage:
+- Ensure you have installed Folium (see Installation).
+- Run the script in a Python environment.
+- Open the generated HTML file (`map1.html`) in a web browser to view the interactive map.
+
+## File Structure:
+- `map1.html`: The output HTML file containing the interactive map.
+- `Python Script`: The Python script (map_script.py) generates the map and saves it as an HTML file.
+
+
+## Technologies Used:
+- **Folium:** A Python library used for visualizing geospatial data. It leverages the `Leaflet.js` library to generate interactive maps.
+- **Python:** The programming language used to write the script.
+- **IDE:** PyCharm
+
+
+## Contributing
+Contributions are welcome! 
+
+### You can contribute by:
+-  Reporting bugs
+-  Suggesting new features
+-  Submitting pull requests to improve the codebase
